@@ -31,7 +31,7 @@ public class PlayerControl : MonoBehaviour
         {
             if (Input.GetKeyDown(KeyCode.Space))
             {
-                body.AddForce(0, 5, 0, ForceMode.Impulse);
+                body.AddForce(0, jumpForce, 0, ForceMode.Impulse);
             }
         }
     }
