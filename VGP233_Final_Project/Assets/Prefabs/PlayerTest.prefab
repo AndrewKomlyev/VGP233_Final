@@ -98,7 +98,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   rotationDirections: 2
-  sensitivity: {x: 200, y: -200}
+  sensitivity: {x: 100, y: -100}
   acceleration: {x: 100, y: 100}
   inputLag: 0.005
 --- !u!1 &8462404068471438807
@@ -534,6 +534,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   rotationDirections: 1
-  sensitivity: {x: 200, y: -200}
+  sensitivity: {x: 100, y: -100}
   acceleration: {x: 100, y: 100}
   inputLag: 0.005
