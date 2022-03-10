@@ -26,9 +26,6 @@ public class StickToPlatform : MonoBehaviour
 
     void OnTriggerStay(Collider col)
     {
-
-
-
         if(!isRotating)
         {
 
