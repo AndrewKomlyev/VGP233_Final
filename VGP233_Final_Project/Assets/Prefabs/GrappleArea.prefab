@@ -13,8 +13,8 @@ GameObject:
   - component: {fileID: 2962057180656733283}
   - component: {fileID: 2962057180656733284}
   - component: {fileID: 2962057180656733285}
-  m_Layer: 3
-  m_Name: GrappleAreas
+  m_Layer: 6
+  m_Name: GrappleArea
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
