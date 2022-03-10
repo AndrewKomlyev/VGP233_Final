@@ -35,8 +35,12 @@ public class PlayerControl : MonoBehaviour
         }
     }
 
+    //private void OnTriggerEnter(Collider other)
+    //{
 
-    void OnCollisionEnter(Collision other)
+    //}
+
+    private void OnTriggerStay(Collider other)
     {
         if (other.gameObject.tag == "Ground")
         {
@@ -44,11 +48,13 @@ public class PlayerControl : MonoBehaviour
         }
     }
 
-    void OnCollisionExit(Collision other)
+
+    private void OnTriggerExit(Collider other)
     {
         if (other.gameObject.tag == "Ground" )
         {
             isGrounded = false;
         }
     }
+
 }

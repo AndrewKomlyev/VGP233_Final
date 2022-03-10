@@ -437,6 +437,7 @@ GameObject:
   - component: {fileID: 7107115294949415189}
   - component: {fileID: 8745284795370727575}
   - component: {fileID: 2324740326200099289}
+  - component: {fileID: 2960166205737832363}
   m_Layer: 0
   m_Name: PlayerTest
   m_TagString: Untagged
@@ -582,3 +583,17 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   grabPosition: {fileID: 2449555083999583489}
+--- !u!136 &2960166205737832363
+CapsuleCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8507842590959855695}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  m_Radius: 0.6
+  m_Height: 2.1
+  m_Direction: 1
+  m_Center: {x: 0, y: 0, z: 0}
