@@ -20,10 +20,12 @@ public class GrabObject : MonoBehaviour
         if (Input.GetKeyDown(KeyCode.E) && Physics.Raycast(transform.position, transform.forward, out hit, 5) && hit.transform.GetComponent<Rigidbody>())
         {
             grabbedObject = hit.transform.gameObject;
+            grabbedObject.GetComponent<Rigidbody>().mass = 0;
 
         }
         else if(Input.GetKeyUp(KeyCode.E))
         {
+            grabbedObject.GetComponent<Rigidbody>().mass = 1;
             grabbedObject = null;
 
 
@@ -39,11 +41,6 @@ public class GrabObject : MonoBehaviour
 
 
         }
-        //while (grabbedObject)
-        //{
-        //    grabbedObject.GetComponent<Rigidbody>().mass = 0;
-
-        //}
 
 
     }
