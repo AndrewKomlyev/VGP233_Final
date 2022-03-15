@@ -54479,6 +54479,26 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 8462404069659220458, guid: 0dab5562c6f9de24db406d90e8226c5d, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 10306, guid: 0000000000000000f000000000000000, type: 0}
+    - target: {fileID: 8462404069659220458, guid: 0dab5562c6f9de24db406d90e8226c5d, type: 3}
+      propertyPath: m_Parameters.colorGradient.ctime0
+      value: 44718
+      objectReference: {fileID: 0}
+    - target: {fileID: 8462404069659220458, guid: 0dab5562c6f9de24db406d90e8226c5d, type: 3}
+      propertyPath: m_Parameters.colorGradient.key0.b
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8462404069659220458, guid: 0dab5562c6f9de24db406d90e8226c5d, type: 3}
+      propertyPath: m_Parameters.colorGradient.key0.g
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8462404069659220458, guid: 0dab5562c6f9de24db406d90e8226c5d, type: 3}
+      propertyPath: m_Parameters.colorGradient.key0.r
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 8507842590959855695, guid: 0dab5562c6f9de24db406d90e8226c5d, type: 3}
       propertyPath: m_Name
       value: PlayerTest
