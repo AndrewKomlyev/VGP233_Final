@@ -26,7 +26,7 @@ public class GrabObject : MonoBehaviour
         }
         else if(Input.GetKeyUp(KeyCode.E))
         {
-            grabbedObject.GetComponent<Rigidbody>().mass = 1;
+            grabbedObject.GetComponent<Rigidbody>().mass = 5;
             grabbedObject = null;
             grabbedObject.tag = "Ground";
 

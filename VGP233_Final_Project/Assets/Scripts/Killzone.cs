@@ -5,6 +5,7 @@ using UnityEngine;
 public class Killzone : MonoBehaviour
 {
     // Start is called before the first frame update
+    public bool isWorking = false;
     void Start()
     {
         
@@ -18,7 +19,7 @@ public class Killzone : MonoBehaviour
 
     private void OnTriggerEnter(Collider player)
     {
-        if (player.tag == "Player")
+        if (player.tag == "Player" && isWorking)
         {
             GameManager.Instance.Respawn();
         }
