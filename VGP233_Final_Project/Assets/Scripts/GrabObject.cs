@@ -24,23 +24,18 @@ public class GrabObject : MonoBehaviour
             grabbedObject.tag = "Untagged";
 
         }
-        else if(Input.GetKeyUp(KeyCode.E))
+        else if (Input.GetKeyUp(KeyCode.E))
         {
             grabbedObject.GetComponent<Rigidbody>().mass = 5;
-            grabbedObject = null;
             grabbedObject.tag = "Ground";
-
+            grabbedObject = null;
+            
         }
 
         if(grabbedObject)
         {
-
             grabbedObject.GetComponent<Rigidbody>().velocity =10 * (grabPosition.position- grabbedObject.transform.position);
-            grabbedObject.transform.rotation = Quaternion.Euler(grabbedObject.transform.rotation.x, grabbedObject.transform.rotation.y, grabbedObject.transform.rotation.z);
-            
-
-
-
+            grabbedObject.transform.rotation = Quaternion.Euler(grabbedObject.transform.rotation.x, grabbedObject.transform.rotation.y, grabbedObject.transform.rotation.z);      
         }
 
 

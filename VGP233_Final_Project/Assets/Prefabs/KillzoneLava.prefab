@@ -13,9 +13,10 @@ GameObject:
   - component: {fileID: 8590435245639452529}
   - component: {fileID: 6529231330187837446}
   - component: {fileID: 3923097731176178938}
+  - component: {fileID: 4140714741229649425}
   m_Layer: 0
   m_Name: KillzoneLava
-  m_TagString: Untagged
+  m_TagString: Killzone
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -109,3 +110,16 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 1, y: 1.1, z: 1}
   m_Center: {x: 0, y: 0.1, z: 0}
+--- !u!114 &4140714741229649425
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1927546699058785097}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4880e172d229483419ecb1060d877d7e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  isWorking: 1
