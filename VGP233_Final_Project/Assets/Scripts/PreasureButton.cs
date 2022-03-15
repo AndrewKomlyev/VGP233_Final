@@ -23,7 +23,7 @@ public class PreasureButton : MonoBehaviour
 
 
 
-    private void OnTriggerEnter(Collider other)
+    private void OnTriggerStay(Collider other)
     {
         if (!touched )
         {
@@ -34,7 +34,6 @@ public class PreasureButton : MonoBehaviour
                 {
                     for (int i = 0; i < activatedObjects.Length; i++)
                     {
-                        print("pref" + i);
                         if (activatedObjects[i].GetComponentInChildren<MovingPlatform>())
                         {
                             activatedObjects[i].GetComponentInChildren<MovingPlatform>().isWorking = !activatedObjects[i].GetComponentInChildren<MovingPlatform>().isWorking;
@@ -52,6 +51,35 @@ public class PreasureButton : MonoBehaviour
             }
         }    
     }
+    //private void OnTriggerEnter(Collider other)
+    //{
+    //    if (!touched)
+    //    {
+    //        touched = true;
+    //        if (other.gameObject.layer == 7)
+    //        {
+    //            if (other.gameObject.GetComponent<Rigidbody>().mass >= 2.0f)
+    //            {
+    //                for (int i = 0; i < activatedObjects.Length; i++)
+    //                {
+    //                    if (activatedObjects[i].GetComponentInChildren<MovingPlatform>())
+    //                    {
+    //                        activatedObjects[i].GetComponentInChildren<MovingPlatform>().isWorking = !activatedObjects[i].GetComponentInChildren<MovingPlatform>().isWorking;
+    //                    }
+    //                    if (activatedObjects[i].GetComponentInChildren<Killzone>())
+    //                    {
+    //                        activatedObjects[i].GetComponentInChildren<Killzone>().isWorking = !activatedObjects[i].GetComponentInChildren<Killzone>().isWorking;
+    //                    }
+    //                    if (activatedObjects[i].GetComponentInChildren<RotatingCylinder>())
+    //                    {
+    //                        activatedObjects[i].GetComponentInChildren<RotatingCylinder>().isWorking = !activatedObjects[i].GetComponentInChildren<RotatingCylinder>().isWorking;
+    //                    }
+    //                }
+    //            }
+    //        }
+    //    }
+    //}
+
 
     private void OnTriggerExit(Collider other)
     {

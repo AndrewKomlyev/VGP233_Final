@@ -22,14 +22,12 @@ public class GrabObject : MonoBehaviour
             grabbedObject = hit.transform.gameObject;
             grabbedObject.GetComponent<Rigidbody>().mass = 0;
             grabbedObject.tag = "Untagged";
-
         }
         else if (Input.GetKeyUp(KeyCode.E))
         {
             grabbedObject.GetComponent<Rigidbody>().mass = 5;
             grabbedObject.tag = "Ground";
-            grabbedObject = null;
-            
+            grabbedObject = null;   
         }
 
         if(grabbedObject)
