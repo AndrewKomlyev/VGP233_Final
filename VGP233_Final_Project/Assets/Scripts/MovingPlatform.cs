@@ -7,6 +7,8 @@ public class MovingPlatform : MonoBehaviour
     [SerializeField] private List<Transform> waypoints;
     [SerializeField] private float speed;
     public int target;
+    public bool isWorking = false;
+
 
     // Start is called before the first frame update
     void Start()
@@ -17,25 +19,28 @@ public class MovingPlatform : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        transform.position = Vector3.MoveTowards(transform.position, waypoints[target].position, speed*Time.deltaTime);
+        if(isWorking)
+        {
+            transform.position = Vector3.MoveTowards(transform.position, waypoints[target].position, speed * Time.deltaTime);
+        }    
     }
 
     void FixedUpdate()
     {
-        if(transform.position== waypoints[target].position)
+        if(isWorking)
         {
-            if(target==waypoints.Count-1)
+            if (transform.position == waypoints[target].position)
             {
-                target = 0;
-            }
-            else
-            {
-                target += 1;
+                if (target == waypoints.Count - 1)
+                {
+                    target = 0;
+                }
+                else
+                {
+                    target += 1;
+                }
             }
         }
-
-
-
     }
 }
 

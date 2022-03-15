@@ -6,6 +6,7 @@ public class RotatingCylinder : MonoBehaviour
 {    
     public GameObject rotatingObject;
     public float rotationSpeed;
+    public bool isWorking = false;
     // Start is called before the first frame update
     void Start()
     {
@@ -15,7 +16,10 @@ public class RotatingCylinder : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        transform.Rotate(0, rotationSpeed * Time.deltaTime, 0); //rotates 50 degrees per second around z axis
+        if(isWorking)
+        {
+            transform.Rotate(0, rotationSpeed * Time.deltaTime, 0); //rotates 50 degrees per second around z axis
+        }
     }
 
     private void OnCollisionEnter(Collision collision)
