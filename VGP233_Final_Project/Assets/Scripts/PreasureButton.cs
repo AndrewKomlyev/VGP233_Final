@@ -41,6 +41,7 @@ public class PreasureButton : MonoBehaviour
                         if (activatedObjects[i].GetComponentInChildren<Killzone>())
                         {
                             activatedObjects[i].GetComponentInChildren<Killzone>().isWorking = !activatedObjects[i].GetComponentInChildren<Killzone>().isWorking;
+                            activatedObjects[i].SetActive(false);
                         }
                         if (activatedObjects[i].GetComponentInChildren<RotatingCylinder>())
                         {
@@ -99,7 +100,6 @@ public class PreasureButton : MonoBehaviour
                     if (activatedObjects[i].GetComponentInChildren<Killzone>())
                     {
                         activatedObjects[i].GetComponentInChildren<Killzone>().isWorking = !activatedObjects[i].GetComponentInChildren<Killzone>().isWorking;
-                        activatedObjects[i].SetActive(false);
                     }
                     if (activatedObjects[i].GetComponentInChildren<RotatingCylinder>())
                     {
