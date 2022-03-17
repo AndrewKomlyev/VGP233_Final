@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 1354599731716463427}
   m_Layer: 0
   m_Name: RoofOrFloor
-  m_TagString: Ground
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -43,6 +43,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1354599731716463427}
     m_Modifications:
+    - target: {fileID: 1743448462286060, guid: 58c08d0cd58281b4e86449149f47b49d, type: 3}
+      propertyPath: m_TagString
+      value: Ground
+      objectReference: {fileID: 0}
     - target: {fileID: 1889573891564722, guid: 58c08d0cd58281b4e86449149f47b49d, type: 3}
       propertyPath: m_Name
       value: Roofing_Flat_01 (7)
@@ -105,6 +109,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1354599731716463427}
     m_Modifications:
+    - target: {fileID: 1743448462286060, guid: 58c08d0cd58281b4e86449149f47b49d, type: 3}
+      propertyPath: m_TagString
+      value: Ground
+      objectReference: {fileID: 0}
     - target: {fileID: 1889573891564722, guid: 58c08d0cd58281b4e86449149f47b49d, type: 3}
       propertyPath: m_Name
       value: Roofing_Flat_01 (6)
@@ -167,6 +175,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1354599731716463427}
     m_Modifications:
+    - target: {fileID: 1743448462286060, guid: 58c08d0cd58281b4e86449149f47b49d, type: 3}
+      propertyPath: m_TagString
+      value: Ground
+      objectReference: {fileID: 0}
     - target: {fileID: 1889573891564722, guid: 58c08d0cd58281b4e86449149f47b49d, type: 3}
       propertyPath: m_Name
       value: Roofing_Flat_01 (3)
@@ -229,6 +241,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1354599731716463427}
     m_Modifications:
+    - target: {fileID: 1743448462286060, guid: 58c08d0cd58281b4e86449149f47b49d, type: 3}
+      propertyPath: m_TagString
+      value: Ground
+      objectReference: {fileID: 0}
     - target: {fileID: 1889573891564722, guid: 58c08d0cd58281b4e86449149f47b49d, type: 3}
       propertyPath: m_Name
       value: Roofing_Flat_01 (9)
@@ -291,6 +307,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1354599731716463427}
     m_Modifications:
+    - target: {fileID: 1743448462286060, guid: 58c08d0cd58281b4e86449149f47b49d, type: 3}
+      propertyPath: m_TagString
+      value: Ground
+      objectReference: {fileID: 0}
     - target: {fileID: 1889573891564722, guid: 58c08d0cd58281b4e86449149f47b49d, type: 3}
       propertyPath: m_Name
       value: Roofing_Flat_01 (10)
@@ -353,6 +373,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1354599731716463427}
     m_Modifications:
+    - target: {fileID: 1743448462286060, guid: 58c08d0cd58281b4e86449149f47b49d, type: 3}
+      propertyPath: m_TagString
+      value: Ground
+      objectReference: {fileID: 0}
     - target: {fileID: 1889573891564722, guid: 58c08d0cd58281b4e86449149f47b49d, type: 3}
       propertyPath: m_Name
       value: Roofing_Flat_01 (4)
